@@ -54,6 +54,7 @@
 		0940B6F61E31F2CB003A09A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0940B7021E31F6FC003A09A0 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
 		0940B7031E31F6FC003A09A0 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
+		0940B7441E320BE5003A09A0 /* Apns_push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Apns_push.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 		0940B6CE1E31F2CB003A09A0 /* Apns_push */ = {
 			isa = PBXGroup;
 			children = (
+				0940B7441E320BE5003A09A0 /* Apns_push.entitlements */,
 				0940B6D21E31F2CB003A09A0 /* AppDelegate.h */,
 				0940B6D31E31F2CB003A09A0 /* AppDelegate.m */,
 				0940B6D51E31F2CB003A09A0 /* ViewController.h */,
@@ -214,6 +216,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = AXEVUJ95ZY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					0940B6E41E31F2CB003A09A0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -431,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Apns_push/Apns_push.entitlements;
 				DEVELOPMENT_TEAM = AXEVUJ95ZY;
 				INFOPLIST_FILE = Apns_push/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -444,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Apns_push/Apns_push.entitlements;
 				DEVELOPMENT_TEAM = AXEVUJ95ZY;
 				INFOPLIST_FILE = Apns_push/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -522,6 +531,7 @@
 				0940B6FB1E31F2CB003A09A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0940B6FC1E31F2CB003A09A0 /* Build configuration list for PBXNativeTarget "Apns_pushTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				0940B6FE1E31F2CB003A09A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0940B6FF1E31F2CB003A09A0 /* Build configuration list for PBXNativeTarget "Apns_pushUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +549,7 @@
 				0940B7011E31F2CB003A09A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
