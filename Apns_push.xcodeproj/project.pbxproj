@@ -15,6 +15,7 @@
 		0940B6DF1E31F2CB003A09A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0940B6DD1E31F2CB003A09A0 /* LaunchScreen.storyboard */; };
 		0940B6EA1E31F2CB003A09A0 /* Apns_pushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0940B6E91E31F2CB003A09A0 /* Apns_pushTests.m */; };
 		0940B6F51E31F2CB003A09A0 /* Apns_pushUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0940B6F41E31F2CB003A09A0 /* Apns_pushUITests.m */; };
+		0940B7041E31F6FC003A09A0 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0940B7021E31F6FC003A09A0 /* NSString+JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0940B6F01E31F2CB003A09A0 /* Apns_pushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Apns_pushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0940B6F41E31F2CB003A09A0 /* Apns_pushUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Apns_pushUITests.m; sourceTree = "<group>"; };
 		0940B6F61E31F2CB003A09A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0940B7021E31F6FC003A09A0 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
+		0940B7031E31F6FC003A09A0 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				0940B6D31E31F2CB003A09A0 /* AppDelegate.m */,
 				0940B6D51E31F2CB003A09A0 /* ViewController.h */,
 				0940B6D61E31F2CB003A09A0 /* ViewController.m */,
+				0940B7021E31F6FC003A09A0 /* NSString+JSON.m */,
+				0940B7031E31F6FC003A09A0 /* NSString+JSON.h */,
 				0940B6D81E31F2CB003A09A0 /* Main.storyboard */,
 				0940B6DB1E31F2CB003A09A0 /* Assets.xcassets */,
 				0940B6DD1E31F2CB003A09A0 /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 				0940B6D71E31F2CB003A09A0 /* ViewController.m in Sources */,
 				0940B6D41E31F2CB003A09A0 /* AppDelegate.m in Sources */,
 				0940B6D11E31F2CB003A09A0 /* main.m in Sources */,
+				0940B7041E31F6FC003A09A0 /* NSString+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AXEVUJ95ZY;
 				INFOPLIST_FILE = Apns_push/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Cicida.com.Apns-push";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AXEVUJ95ZY;
 				INFOPLIST_FILE = Apns_push/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Cicida.com.Apns-push";
 				PRODUCT_NAME = "$(TARGET_NAME)";
