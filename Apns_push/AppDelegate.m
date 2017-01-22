@@ -124,9 +124,16 @@
     self.window.backgroundColor = [UIColor redColor];
     [self.window addSubview:view];
     [self.window makeKeyAndVisible];
-
 }
 
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(nonnull NSData *)deviceToken {
+    NSLog(@"上传deviceToken");
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(nonnull NSError *)error {
+    NSLog(@"如果此方法被调用,说明注册token失败。一般是由于使用了通用证书或者是模拟器调试导致,请检查证书并用真机调试");
+    NSLog(@"error = %@",error);
+}
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
